@@ -22,7 +22,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [super viewDidLoad];
     _cache = [[NSMutableDictionary alloc] initWithCapacity:20];
     
 }

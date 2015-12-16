@@ -17,6 +17,5 @@
 
 @interface LocalSearchController : UITableViewController <UISearchBarDelegate, UISearchControllerDelegate, UISearchResultsUpdating>
 
-    // @property (nonatomic, strong) UISearchController *searchController;
 @property (nonatomic,weak) id <LocalSearchControllerDelegate> delegate;
 @end

@@ -11,7 +11,6 @@
 
 @interface ViewController () <LocalSearchControllerDelegate>
 @property (nonatomic, strong) UISearchController *searchController;
-    // our secondary search results table view UISearchControllerMKLocalSearch
 @property (nonatomic, strong) LocalSearchController *resultsTableController;
 @end
 
@@ -26,7 +25,7 @@
     _resultsTableController = [[LocalSearchController alloc] init];
     _resultsTableController.delegate = self;
     _searchController = [[UISearchController alloc] initWithSearchResultsController:self.resultsTableController];
-        //     _resultsTableController.searchController = _searchController;
+
     self.searchController.searchResultsUpdater = _resultsTableController;
     [self.searchController.searchBar sizeToFit];
     
